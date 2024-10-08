@@ -1,0 +1,370 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #f8f8f8;
+    position: relative;
+    padding-top: 0.1px;
+}
+
+#nav{
+    height: 11vh;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 40px;
+   border-top: 2px solid black;
+   border-bottom: 2px solid black;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   
+}
+
+#nav h1{
+    /* background-color: yellow; */
+    height: 100%;
+    width: 18%;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-family: monument;
+    letter-spacing: -1px;
+    position: relative;
+}
+
+#nav h1::after{
+    content: "©️";
+    font-family: gilroy;
+    font-weight: 200;
+    font-size: 20px;
+    position: absolute;
+    right: 9%;
+    top: 9%;
+    letter-spacing: 1px;
+
+}
+
+#nav h1::before{
+    content: "model management";
+    font-family: gilroy;
+    font-weight: 300;
+    font-size: 16px;
+    position: absolute;
+    right: 18%;
+    bottom: 9%;
+
+}
+
+#nav h2{
+    /* background-color: yellow; */
+    height: 100%;
+    width: 22%;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid black;
+    font-size: 22px;
+    font-weight: 600;
+
+}
+
+#nav h2:nth-last-child(1){
+    width: 10%;
+}
+
+#nav h2:nth-last-child(2){
+    width: 25%;
+}
+
+#center{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    padding: 4vw;
+    position: relative;
+}
+
+#content{
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+   position: relative;
+}
+
+#content video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#overlay{
+    height: 52%;
+    width: 100%;
+    /* background-color: red; */
+    bottom: 0;
+    position: absolute;
+    padding: 3vw;
+    color: wheat;
+   
+}
+
+#over1{
+    color: wheat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2vw;
+}
+#over1 h1{
+    font-family: monument;
+
+}
+#over1 h2{
+    font-size: 2vw;
+    padding: 1.9vw 2.4vw;
+    border-radius: 50%;
+    border: 1px solid white;
+
+}
+#over2{
+    color: wheat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid white;
+}
+
+#over2 h4{
+    font-size: 1.5vw;
+}
+
+#over img{
+    color: wheat;
+}
+
+
+#scroll{
+    height: 40vh;
+    width: 100%;
+    /* background-color: red; */
+    /* padding: 1vw; */
+    white-space: nowrap;
+    overflow-x: hidden;
+   overflow-y: hidden;
+}
+
+#container{
+    height: 100%;
+    width: 110%;
+    /* background-color: yellow; */
+    display: inline-block;
+    padding: 2vw;
+    animation-name: anime;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+#scroll img{
+    /* display: none; */
+    height: 100%;
+    width: 15%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 30% 30%;
+    margin: 1vw;
+}
+
+@keyframes anime{
+    from{
+        transform: translateX(0);
+}
+  to{
+    transform: translateX(-100%);
+  }
+}
+
+#alphabet{
+    height: 10vh;
+    width: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#alphabet h5{
+    font-size: 1.7vw;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 2px;
+    border-bottom: 2px solid black;
+    margin-right: 2vw;
+
+
+}
+
+#alphabet h6{
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 2px;
+   /* background-color: rgb(134, 77, 117); */
+   padding: 0.5vw 0.7vw;
+   border-radius: 50%;
+   border: 2px solid #00000000 ;
+}
+
+#alphabet h6:hover{
+    border: 1px solid #000;
+}
+
+#page2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 2vw 5vw;
+}
+
+#page2-part1{
+    height: 100%;
+    width: 50%;
+    background-image: url(https://images.unsplash.com/photo-1690544252334-ff1765e6d212?q=80&w=1926&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+}
+
+#page2-part2{
+    height: 100%;
+    width: 45%;
+}
+
+#page2-part2 img{
+    height: 70%;
+    width: 100%;
+object-fit: cover;
+}
+
+#page3{
+    padding: 5vw 4vw;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#page3>h1{
+    text-align: center;
+    font-family:  monument;
+    text-transform: uppercase;
+    font-size:3vw ;
+    margin-bottom: 5vh;
+}
+
+.elem{
+    height: 15vh;
+    width: 100%;
+    border-top: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    transition: all ease 0.5s;
+    
+}
+.elem img{
+    height: 90px;
+    width: 100px;
+    position: absolute;
+    left: 15%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+.elem h4{
+    width: 6%;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.2vw;
+    font-weight: 300;
+}
+
+.elem:nth-last-child(1){
+    border-bottom: 2px solid black;
+
+}
+
+.elem .elem-part2{
+    width: 45%;
+}
+
+.elem:hover img{
+    opacity: 1;
+    left: 30%;
+}
+.elem:hover{
+    background-color: #afabab;
+}
+
+#marque{
+    /* height: 20vh; */
+    width: 100%;
+    /* background-color: green; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 1vw;
+}
+
+#marque h1{
+    display: inline-block;
+    font-size: 3vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+   font-family: monument;
+   margin-right: 16px;
+   animation-name: move;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+   letter-spacing: 3px;
+   
+}
+
+@keyframes move{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+
+#footer{
+    height: 100%;
+    width: 100%;
+    
+}
